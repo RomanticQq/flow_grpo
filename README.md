@@ -12,7 +12,7 @@
 <details open>
 <summary><strong>2026-01-13</strong></summary>
 
-* 复现flow_grpo仓库中实现的flux_grpo和sd3_dpo，具体<a href='https://modelscope.cn/models/fq980207/flow_grpo/summary'>实验记录模型权重</a>和<a href='https://swanlab.cn/@fq/flow_grpo/overview'>实验记录</a>。
+* 复现flow_grpo仓库中实现的flux_grpo和sd3_dpo，具体<a href='https://modelscope.cn/models/fq980207/flow_grpo/summary'>模型权重</a>和<a href='https://swanlab.cn/@fq/flow_grpo/overview'>实验记录</a>。
 
 * 在复现sd3_dpo的实验中，一定要注意总体batch_size的大小，该实验是在四张h800上训练的，单张卡上batch_size为1，梯度累积为6的配置下训练的。根据训练经验，一次梯度更新所使用的数据量较小时，会使模型的效果提升不明显甚至下降。
 
